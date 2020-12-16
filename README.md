@@ -55,7 +55,6 @@ def loop():
 	unarm = 1		
 		
 	while(unarm == 1):
-		key = keypad.getKey()
 		GPIO.output(ledPin,GPIO.HIGH) # turn on led
 		lcd.setCursor(0,0)  # set cursor position
 		lcd.message('Alarm Armed!\n')
